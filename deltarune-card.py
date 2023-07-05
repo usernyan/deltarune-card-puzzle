@@ -20,15 +20,20 @@ symbol_pairs = { k:v for k, v in zip(initial_symbols, swapped_symbols)}
 symbol_pairs.update({v:k for k, v in symbol_pairs.items()})
 
 def main():
-    target_pattern = "abxxy"
     if len(sys.argv) > 1:
         target_pattern = sys.argv[1]
+    else:
+        eprint("Missing pattern argument")
+        return
 
     solution = solve_for_target(target_pattern)
     print(target_pattern)
     print( simulate_solution(solution) )
     print(solution)
 
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 def solve_for_target(target):
     #valid moves are any of the initial letters and "swap"
