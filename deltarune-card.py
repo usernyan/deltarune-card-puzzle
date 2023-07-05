@@ -5,7 +5,7 @@ import sys
 #[ a b x x y ]
 #There is another empty line:
 #[ _ _ _ _ _ ]
-#And there are three buttons before you:
+#And there are three buttons that manipulate it:
 #a    x    swap
 #Pressing "a" or "x" places an a or x on the leftmost unused space
 #Pressing "swap" swaps each symbol on the line for its counterpart
