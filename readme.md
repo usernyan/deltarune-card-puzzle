@@ -11,3 +11,8 @@ So for the puzzle, "Diamond, Spade, Heart, Club" run
 ```shell
 python deltarune-card.py xayb
 ```
+
+to get a response with a solution:  
+```
+a, x, swap, x, a, swap
+```
