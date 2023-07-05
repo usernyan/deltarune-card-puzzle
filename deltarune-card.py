@@ -27,8 +27,8 @@ def main():
         return
 
     solution = solve_for_target(target_pattern)
-    print(target_pattern)
-    print( simulate_solution(solution) )
+    # print(target_pattern)
+    # print( simulate_solution(solution) )
     print(solution)
 
 
